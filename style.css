@@ -1,0 +1,74 @@
+body {
+  font-size: 10px;
+  font-family: sans-serif;
+}
+
+.topBar {
+  height: 25px;
+}
+.top-bar-bg {
+  background-color: rgb(226, 230, 235);
+}
+
+.top-bar-p {
+  text-transform: capitalize;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.top-bar-span {
+  text-decoration: underline;
+}
+
+.headerContainer {
+  display: flex;
+}
+
+.headerLogo {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  min-width: 205px;
+}
+
+.searchBar {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  height: 40px;
+  width: 450px;
+  font-size: 1.2rem;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  min-width: 300px;
+}
+
+.btn1 {
+  width: 40px;
+  height: 40px;
+}
+
+.header-nav {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* .nav-list {
+  
+} */
+.list-style-none {
+  list-style: none;
+}
+
+.list-item-link {
+  color: black;
+}
+
+.list-item-link:hover {
+  color: rgb(118, 0, 0);
+}
+
+.li-link-1 {
+  border-right: 1px solid rgb(46, 46, 46);
+  min-width: 69px;
+}
+
+.li-link-2 {
+  padding-left: 3px;
+  min-width: 102px;
+}
