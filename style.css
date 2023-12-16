@@ -32,6 +32,7 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 1.2rem;
   text-wrap: wrap;
+  color: black;
 }
 .top-bar-span {
   text-decoration: underline;
