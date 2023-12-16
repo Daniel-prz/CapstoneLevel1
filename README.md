@@ -16,3 +16,14 @@ Day 2:
 - added button with SVG from ChatGPT
 - styled elements with Bootstrap and CSS
 - asked ChatGPT questions and tips to help build my page
+
+Day 3:
+
+- added item and cart sections
+- added more responsive styling
+- 
+
+Day 4:
+
+- added auth0 in JS file for sign up/log in functionality
+-
