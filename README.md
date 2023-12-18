@@ -1,6 +1,6 @@
-# OnlineShopSite
+# CapstoneLevel1
 
-Separate repository in part of CapstoneProject1
+Project showcasing current coding knowledge - December 2023
 
 Day 1:
 
