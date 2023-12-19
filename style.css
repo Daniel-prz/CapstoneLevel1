@@ -2,11 +2,11 @@ body {
   font-size: 10px;
   font-family: sans-serif;
 }
+.black {
+  color: black;
+}
 
 /* STYLING FOR BOTH INDEX AND CART */
-
-@media screen and (max-width: 767px) {
-}
 
 /* HEADER */
 
@@ -128,25 +128,17 @@ body {
   padding-left: 3px;
   min-width: 102px;
 }
-@media screen and (max-width: 767px) {
-  .large-nav {
-    display: none;
-  }
-  .headerContainer {
-    height: 150px;
-  }
-}
 
-@media screen and (min-width: 767px) {
-  .small-nav {
-    display: none;
-  }
-}
 /* IMAGES/BANNERS */
 
+.img-section {
+  background-color: rgb(226, 230, 235);
+  margin-bottom: 15px;
+}
 .img-div {
   box-shadow: 0px 1px 8px rgb(45, 45, 45);
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .img-div1 {
@@ -196,41 +188,109 @@ body {
   padding-left: 13px;
 }
 
-.img-section {
-  background-color: rgb(226, 230, 235);
-}
-
 /* ITEMS  */
 
+.item-section {
+  margin-top: 20px;
+}
+
 .item-section-header {
-  margin-left: 25px;
-  padding-left: 25px;
+  margin-left: 60px;
+  padding-left: 60px;
+  font-family: "Trebuchet MS", sans-serif;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 2.2rem;
 }
 
 .item-row {
   display: flex;
   justify-content: center;
   justify-content: space-around;
+  margin-bottom: 20px;
+  background-color: rgb(226, 230, 235);
 }
 
 .item {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 20px;
+  margin-bottom: 15px;
 }
 .item-img {
   height: clamp(250px, 30vh, 400px);
   width: clamp(200px, 15vw, 300px);
 }
 
+.item-name {
+  font-size: 0.9rem;
+  margin-bottom: 3px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+
+.price {
+  font-size: 0.8rem;
+  margin-top: 2px;
+  margin-bottom: 17px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+.old-price {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-weight: 400;
+}
+.new-price {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: rgb(161, 19, 19);
+  font-weight: 600;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
 .add-to-cart {
-  width: clamp(75px, 10vw, 200px);
+  width: clamp(55px, 9vw, 200px);
   margin: 0;
   padding: 0;
   height: clamp(20px, 5vh, 100px);
   align-self: center;
+  font-size: 0.9rem;
+  font-family: "Arial Narrow Bold", sans-serif;
+  background-color: rgb(239, 239, 239);
+  border-radius: 5px;
+  border-width: 1px;
+}
+
+.add-to-cart:hover {
+  background-color: rgb(218, 218, 218);
+}
+
+/* FOOTER */
+
+.footer {
+  height: 150px;
+  background-color: black;
+}
+
+.footer-row {
+  justify-content: space-around;
+}
+.github,
+.linkedin {
+  color: rgb(255, 255, 255);
+  padding-top: 50px;
   font-size: 0.8rem;
 }
+.github:hover,
+.linkedin:hover {
+  color: rgb(227, 233, 255);
+}
+
 /* STYLING FOR PAGINATION */
 
 .page-list {
@@ -258,11 +318,72 @@ body {
 }
 
 .cart-header {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 2.2rem;
+  padding-top: 10px;
+  margin-left: 25px;
+  padding-left: 30px;
 }
 .cart-body {
   padding-top: 20px;
   padding-bottom: 20px;
   min-height: 300px;
   background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-row {
+  margin-left: 30px;
+}
+.cart-h3 {
+  font-size: 1.2rem;
+}
+
+.cart-h3-price {
+  margin-left: 35px;
+  padding-left: 35px;
+}
+.cart-h3-qty {
+  margin-top: 30px;
+}
+.cart-item {
+  height: clamp(100px, 10vh, 250px);
+  display: flex;
+  justify-content: space-around;
+}
+
+.cart-item-img {
+  width: clamp(70px, 8vw, 200px);
+  height: clamp(90px, 12vh, 250px);
+}
+.cart-item-name {
+  font-size: 0.85rem;
+}
+
+.cart-item-pricetag {
+  font-size: 0.85rem;
+  margin-right: 50px;
+  padding-right: 40px;
+  margin-top: 30px;
+}
+.cart-item-price {
+  font-size: 0.85rem;
+}
+
+.cart-item-qty {
+  font-size: 0.85rem;
+  padding-right: 40px;
+  margin-top: 30px;
+}
+.cart-total-div {
+  flex-direction: row;
+  justify-content: right;
+  margin-right: 80px;
+  padding-right: 80px;
+}
+.cart-total-text,
+.cart-total {
+  font-size: 1rem;
 }

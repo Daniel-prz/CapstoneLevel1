@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
 </head>
 
 <body>
@@ -23,8 +24,46 @@
         </div>
         <div class="headerContainer d-block d-md-flex mt-4 justify-content-between">
             <div class="  ps-5">
-                <h1 class="fs-1 headerLogo" title="Music Shop"><a class="headerLogo" href="index.html">Music Shop</a>
-                </h1>
+                <div class="d-flex">
+                    <h1 class="fs-1 headerLogo" title="Music Shop"><a class="headerLogo" href="index.html">Music
+                            Shop</a>
+                    </h1>
+                    <div class="navbar-div small-nav ps-3">
+                        <nav class="navbar navbar-expand-lg">
+                            <div class="p-0 container-fluid">
+
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon border-none"></span>
+                                </button>
+                                <div class="collapse navbar-collapse header-nav" id="navbarSupportedContent">
+                                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-list d-flex">
+                                        <li class="list-item">
+                                            <a class="list-item-link li-link-0 active text-decoration-none justify-content-center"
+                                                aria-current="page" href="/">Home</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <div onclick="login()"
+                                                class="login list-item-link li-link-1 text-decoration-none pe-1">Log
+                                                In</div>
+                                            <div class="login list-item-link li-link-2 text-decoration-none ps-2 pe-4">
+                                                Sign
+                                                Up</div>
+
+                                        </li>
+
+
+                                        <li class="list-item d-flex">
+                                            <a href="cart.html"
+                                                class="list-item-link li-link-3 text-decoration-none">Cart</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
                 <nav class="pagination-nav">
                     <ul class="page-list d-flex list-style-none">
                         <li class="page-item"><a class="page-link" href="index.html">Home</a></li>
@@ -37,9 +76,9 @@
                 </nav>
 
             </div>
-            <div class="pt-2">
+            <div class="pt-2 d-none">
                 <form class="" action="">
-                    <input class="searchBar ps-4 pt-2 me-0" for="search" name="search" type="text"
+                    <input class="searchBar ps-4 pt-2 me-0 " for="search" name="search" type="text"
                         placeholder="Search guitars, microphones, amps...">
                     <button class="btn1 fs-5 ps-1 ms-0 mt-0" type="button" value="Search">
                         <!-- SVG CREATED BY CHATGPT, AND MODIFIED -->
@@ -50,18 +89,36 @@
                         </svg></button>
                 </form>
             </div>
-            <div class="nav-div me-5 d-none">
-                <nav class="header-nav">
-                    <ul class="d-flex  list-style-none nav-list">
-                        <li class="list-item">
-                            <a class="list-item-link li-link-1  text-decoration-none fs-5 pe-2" href="#">Log In</a>
+            <div class="navbar-div">
+                <nav class="navbar large-nav navbar-expand-lg">
+                    <div class="container-fluid">
 
-                            <a class="list-item-link li-link-2 text-decoration-none fs-5 pe-4" href="#"> Sign Up</a>
-                        </li>
-                        <li class="list-item">
-                            <a class="list-item-link li-link-3 text-decoration-none fs-5 mb-0 pb-0" href="#">Cart</a>
-                        </li>
-                    </ul>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon border-none"></span>
+                        </button>
+                        <div class="collapse navbar-collapse header-nav" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-list d-flex">
+                                <li class="list-item">
+                                    <a class="list-item-link li-link-0 active text-decoration-none justify-content-center"
+                                        aria-current="page" href="/">Home</a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="login list-item-link li-link-1 text-decoration-none pe-1">Log
+                                        In</a>
+                                    <a class="login list-item-link li-link-2 text-decoration-none ps-2 pe-4">Sign
+                                        Up</a>
+
+                                </li>
+
+
+                                <li class="list-item d-flex">
+                                    <a href="cart.html" class="list-item-link li-link-3 text-decoration-none">Cart</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </nav>
             </div>
         </div>
@@ -69,9 +126,28 @@
 
     <div class="cart-section">
         <div class="cart-header">
-            <h2>My Cart</h2>
+            <h2><a class="text-decoration-none black" href="cart.html">My Cart</a></h2>
         </div>
-        <div class="cart-body"></div>
+        <div class="cart-body">
+            <div class="cart-row d-flex justify-content-around">
+                <h3 class="cart-h3">Item</h3>
+                <h3 class="cart-h3 cart-h3-price">Price</h3>
+                <h3 class="cart-h3">Qty.</h3>
+            </div>
+            <div class="cart-item-section">
+                <div class="cart-item">
+                    <div class="cart-item-and-name"><img class="cart-item-img" src="louis-hansel-unsplash.jpg"
+                            alt="Dreadnought Acoustic Guitar"><span class="cart-item-name">Dreadnought Acoustic
+                            Guitar</span></div>
+                    <p class="cart-item-pricetag">$<span class="cart-item-price">179.99</span></p>
+                    <p class="cart-item-qty">1</p>
+                </div>
+
+            </div>
+            <div class="cart-total-div d-flex">
+                <p class="cart-total-text">Total: $</p><span class="cart-total">179.99</span>
+            </div>
+        </div>
     </div>
 
     <section class="img-section d-block d-md-flex justify-content-around pt-4">
@@ -87,7 +163,16 @@
                 ACCESSORIES, AND MORE</span></div>
     </section>
 
-
+    <footer class="footer">
+        <div class="footer-row d-flex">
+            <a class="linkedin text-decoration-none" target="_blank"
+                href="https://www.linkedin.com/in/daniel-perez-416b2628a/">LinkedIn</a>
+            <a class="github text-decoration-none" target="_blank" href="https://github.com/Daniel-prz">GitHub</a>
+        </div>
+        <div>
+            <div class="btn btn-primary" id="logout">Logout</div>
+        </div>
+    </footer>
 
 
 

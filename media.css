@@ -1,0 +1,14 @@
+@media screen and (max-width: 767px) {
+  .large-nav {
+    display: none;
+  }
+  .headerContainer {
+    height: 150px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .small-nav {
+    display: none;
+  }
+}
