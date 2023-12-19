@@ -342,7 +342,7 @@ body {
 }
 
 .cart-h3-price {
-  margin-left: 35px;
+  margin-left: 45px;
   padding-left: 35px;
 }
 .cart-h3-qty {
@@ -364,7 +364,7 @@ body {
 
 .cart-item-pricetag {
   font-size: 0.85rem;
-  margin-right: 50px;
+  margin-right: 40px;
   padding-right: 40px;
   margin-top: 30px;
 }
@@ -374,16 +374,38 @@ body {
 
 .cart-item-qty {
   font-size: 0.85rem;
-  padding-right: 40px;
+  padding-right: 25px;
+  margin-right: 25px;
   margin-top: 30px;
 }
 .cart-total-div {
   flex-direction: row;
   justify-content: right;
-  margin-right: 80px;
+  margin-right: 85px;
   padding-right: 80px;
+  margin-top: 30px;
 }
 .cart-total-text,
 .cart-total {
+  font-size: 0.9rem;
+}
+
+.checkout-div {
+  justify-content: right;
+  margin-right: 80px;
+  padding-right: 80px;
+  margin-top: 10px;
+}
+
+.checkout {
   font-size: 1rem;
+  border-radius: 2px;
+  border-width: 1.5px;
+  background-color: rgb(182, 224, 225);
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.checkout:hover {
+  background-color: rgb(176, 229, 230);
 }
