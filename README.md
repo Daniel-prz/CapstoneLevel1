@@ -2,6 +2,10 @@
 
 Music Shop
 
+# CapstoneLevel1
+
+Project showcasing current coding knowledge - December 2023
+
 ## Project Description
 
 My project is a mock online shopping website for instruments. My project will be
@@ -85,6 +89,7 @@ Tried to implement responsive design
 ### Day 4: [Date]
 
 - added auth0 in JS file for sign up/log in functionality
+  <<<<<<< HEAD
 - used media queries for responsive design
 - added images and items to item section
 
@@ -146,4 +151,6 @@ Use links in footer of each page to view my GitHub and LinkedIn profile
 
 ---
 
-**Note to Students:** Be sure to update this README daily with your reflections and maintain it as a living document throughout your project. This file not only serves as a diary of your progress but also as a comprehensive overview of your capstone project for anyone who visits your repository.
+# **Note to Students:** Be sure to update this README daily with your reflections and maintain it as a living document throughout your project. This file not only serves as a diary of your progress but also as a comprehensive overview of your capstone project for anyone who visits your repository.
+
+- > > > > > > > b101a53bca852f3879f222210a4d93ff86826449
